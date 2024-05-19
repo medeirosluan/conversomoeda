@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(img/8543277.jpg);
+        }
+        .container{
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #operacao{
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        input,#btn{
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            font-size: 50px;
+            height: 0;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="container
+    ">
+        <input type="number" id="inPrimeiro" placeholder="Digite 1º numero">
+        <input type="number" id="inSegundo" placeholder="Digite 2º numero">
+        <select id="operacao">
+            <option value="Multiplicação">Multiplicação</option>
+            <option value="Divisão">Divisão</option>
+            <option value="Adição">Adição</option>
+            <option value="Subtração">Subtração</option>
+        </select>
+        <button id="btn">Resolver</button>
+        <p></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
