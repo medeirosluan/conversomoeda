@@ -1,4 +1,4 @@
-
+const operação = document.querySelector('#operacao')
 const inPrimeiro = document.querySelector('#inPrimeiro')
 const inSegundo = document.querySelector('#inSegundo')
 const msg = document.querySelector('p')
