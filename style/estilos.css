@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    outline: none;
+}
+.logo{
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+}
+
+body{
+    background-color: #8A51FC;
+}
+
+main{
+    width: 470px;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 44px 24px 23px;
+}
+
+label{
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+select{
+    cursor: pointer;
+}
+
+select,input,button{
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 20px;
+    appearance: none;
+    padding-left: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #777777;
+}
+
+button{
+    margin-top: 20px;
+    color: #fafafa;
+    background-color: #772FD3;
+    border: none;
+    border-radius: 5px;
+}
+
+.seta{
+    width: 50px;
+}
+input[type=number]::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0;
+    }
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 0.6;
+}
+section{
+    border-radius: 20px;
+    border: 1px solid #8A51FC ;
+}
+
+div{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 20px;
+ gap: 18px;
+
+}
+
+.valor-convertido,.valor-converte{
+    font-size: 35px;
+}

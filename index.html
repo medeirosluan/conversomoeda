@@ -3,66 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vetores</title>
-    <style>
-
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            outline: none;
-        }
-        
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: url(img/8543277.jpg);
-        }
-        .container{
-
-            display: flex;
-            flex-direction: column;
-        }
-
-        #operacao{
-            margin-bottom: 10px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        input,#btn{
-            padding: 10px;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        p{
-            text-align: center;
-            font-size: 50px;
-            height: 0;
-            color: white;
-        }
-        
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/estilos.css">
+    <title>Conversor</title>
 </head>
 <body>
-
-
-    <div class="container
-    ">
-        <input type="number" id="inPrimeiro" placeholder="Digite 1º numero">
-        <input type="number" id="inSegundo" placeholder="Digite 2º numero">
-        <select id="operacao">
-            <option value="Multiplicação">Multiplicação</option>
-            <option value="Divisão">Divisão</option>
-            <option value="Adição">Adição</option>
-            <option value="Subtração">Subtração</option>
+<img class="logo" src="assets/img/logo.gif" alt="logo">
+<main>
+    <label>
+        Converter <strong>de</strong>
+        <select>
+            <option>R$ Real brasileiro</option>
         </select>
-        <button id="btn">Resolver</button>
-        <p></p>
-    </div>
+    </label>
+    <label>
+        Converter <strong>para</strong>
+        <select>
+            <option value="">US$ Dólar Americano</option>
+            <option value="">€ Euro</option>
+        </select>
+
+    </label>
+    <label>
+        Valor
+        <input type="number" min="0.00" step="0.01" placeholder="R$ 10.000,00">
+        <button>
+            Converter
+        </button>
+    </label>
+    <section>
+        <div>
+            <img src="assets/img/real.png" alt="">
+            <p>Real</p>
+            <p class="valor-converte"><strong>R$ 0.00</strong></p>
+      
+      
+            <img class="seta" src="assets/img/seta-para-baixo.png" alt="">
+       
+            <img src="assets/img/dolar.png" alt="">
+            <p>Dólar Americano</p>
+            <p class="valor-convertido"><strong>US$ 0.00</strong></p>
+        </div>
+    </section>
+</main>
     <script src="js/script.js"></script>
 </body>
 </html>
