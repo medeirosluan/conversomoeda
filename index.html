@@ -10,19 +10,18 @@
     <title>Conversor</title>
 </head>
 <body>
-<img class="logo" src="assets/img/logo.gif" alt="logo">
 <main>
     <label>
         Converter <strong>de</strong>
         <select>
-            <option>R$ Real brasileiro</option>
+            <option value="real">R$ Real brasileiro</option>
         </select>
     </label>
     <label>
         Converter <strong>para</strong>
-        <select>
-            <option value="">US$ Dólar Americano</option>
-            <option value="">€ Euro</option>
+        <select id="selecao-valor">
+            <option value="dolar">US$ Dólar Americano</option>
+            <option value="euro">€ Euro</option>
         </select>
 
     </label>
@@ -35,15 +34,15 @@
     </label>
     <section>
         <div>
-            <img src="assets/img/real.png" alt="">
+            <img src="./assets/real.png" alt="" >
             <p>Real</p>
             <p class="valor-converte"><strong>R$ 0.00</strong></p>
       
       
-            <img class="seta" src="assets/img/seta-para-baixo.png" alt="">
+            <img class="seta" src="./assets/seta-para-baixo.png" alt="">
        
-            <img src="assets/img/dolar.png" alt="">
-            <p>Dólar Americano</p>
+            <img src="./assets/dolar.png" alt="" class="logo-moeda">
+            <p class="msg">Dólar Americano</p>
             <p class="valor-convertido"><strong>US$ 0.00</strong></p>
         </div>
     </section>

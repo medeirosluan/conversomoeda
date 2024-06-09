@@ -5,12 +5,6 @@
     font-family: Roboto;
     outline: none;
 }
-.logo{
-    display: block;
-    width: 300px;
-    margin: 20px auto;
-}
-
 body{
     background-color: #8A51FC;
 }
@@ -19,7 +13,7 @@ main{
     width: 470px;
     background-color: #F4F4F4;
     border-radius: 20px;
-    margin: 20px auto;
+    margin: 38px auto;
     padding: 44px 24px 23px;
 }
 

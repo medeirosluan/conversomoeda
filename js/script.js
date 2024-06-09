@@ -1,33 +1,42 @@
+const btn = document.querySelector('button')
+const valorReal = document.querySelector('.valor-converte')
+const valorDolar = document.querySelector('.valor-convertido')
+const selecaoMoeda = document.querySelector('#selecao-valor')
+const logoMoney  = document.querySelector('.logo-moeda')
+const aviso = document.querySelector('.msg')
+const valorEntrada = document.querySelector('input')
 
-const button = document.querySelector('button')
-const operação = document.querySelector('#operacao')
-const inPrimeiro = document.querySelector('#inPrimeiro')
-const inSegundo = document.querySelector('#inSegundo')
-const msg = document.querySelector('p')
-const btn = document.querySelector('#btn')
+function converteValor() {
+    const valorDolarDia = 5.25
+    const valorEuroDia = 5.70
+
+    if (selecaoMoeda.value === 'dolar') {
+        valorDolar.innerHTML = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD'
+        }).format(valorEntrada.value / valorDolarDia)
+
+        logoMoney.src = './assets/dolar.png'
+        aviso.innerHTML = 'Dólar Americano'
+    }
+
+    else if (selecaoMoeda.value === 'euro') {
+        valorDolar.innerHTML = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD'
+        }).format(valorEntrada.value / valorEuroDia)
+
+        logoMoney.src = './assets/euro.png'
+        aviso.innerHTML = 'Euro'
+
+    }
+
+    valorReal.innerHTML = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    }).format(valorEntrada.value)
 
 
-function converteValor(){
-    const valorConverte = document.querySelector('.valor-converte')
-    const valorConvertido = document.querySelector('.valor-convertido')
-    const valorInput = document.querySelector('input').value
-   
-    const valorDolar = 5.14
-   
-   
-    const valorReal = valorInput / valorDolar
-    
-    valorConverte.innerHTML = new Intl.NumberFormat('pt-BR',{
-        style:'currency',
-        currency:'BRL'
-        
-    }).format(valorInput)
-
-    valorConvertido.innerHTML = Intl.NumberFormat('en-US',{
-       style:'currency',
-       currency:'USD' 
-    }).format(valorReal)
-    
 }
 
-button.addEventListener('click',converteValor)
+btn.addEventListener('click', converteValor)
