@@ -84,7 +84,7 @@ div{
     font-size: 35px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 450px){
     main{
       width: 100%;
     }
