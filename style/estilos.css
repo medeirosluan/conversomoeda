@@ -6,11 +6,11 @@
     outline: none;
 }
 body{
-    background-color: #8A51FC;
+    background-color: #797979;
 }
 
 main{
-    width: 470px;
+    width: 430px;
     background-color: #F4F4F4;
     border-radius: 20px;
     margin: 38px auto;
@@ -82,4 +82,15 @@ div{
 
 .valor-convertido,.valor-converte{
     font-size: 35px;
+}
+
+@media screen and (max-width: 500px){
+    main{
+      width: 100%;
+    }
+
+    body{
+        background-color: #f4f4f4;
+    }
+    
 }
