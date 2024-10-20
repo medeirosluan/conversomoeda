@@ -7,8 +7,8 @@ const aviso = document.querySelector('.msg')
 const valorEntrada = document.querySelector('input')
 
 function converteValor() {
-    const valorDolarDia = 5.25
-    const valorEuroDia = 5.70
+    const valorDolarDia = 6.13
+    const valorEuroDia = 5.64
 
     if (selecaoMoeda.value === 'dolar') {
         valorDolar.innerHTML = new Intl.NumberFormat('en-US', {
