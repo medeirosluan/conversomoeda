@@ -40,3 +40,5 @@ function converteValor() {
 }
 
 btn.addEventListener('click', converteValor)
+
+
